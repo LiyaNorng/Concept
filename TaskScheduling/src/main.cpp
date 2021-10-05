@@ -1,6 +1,16 @@
 #include <Arduino.h>
 #include <Arduino_FreeRTOS.h>
 
+
+/**
+ * Date: October 4, 2021
+ * Author: Liya Norng
+ * 
+ * Using mega 2560 board using freertos create two tasks. One to get user input to store for the new delay rate. 
+ *  Other task is to delay the LED to that new rate from User input
+ *  
+ */
+
 static int rate = 8000;
 static const int led = LED_BUILTIN;
 
